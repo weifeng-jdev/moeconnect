@@ -25,12 +25,15 @@
         <java.version>1.8</java.version>
         <hutool-version>5.5.9</hutool-version>
         <mybatis-version>2.2.2</mybatis-version>
+        <mybatis-plus-version>3.4.3</mybatis-plus-version>
         <druid-version>1.2.8</druid-version>
         <spring-boot-version>2.6.3</spring-boot-version>
         <lombok-version>1.18.22</lombok-version>
         <db-driver-version>8.0.28</db-driver-version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
+        <jwt-version>0.9.0</jwt-version>
+        <fastjson-version>1.2.33</fastjson-version>
     </properties>
 
     <dependencyManagement>
@@ -82,12 +85,18 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <!-- 数据库驱动 -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${db-driver-version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-version}</version>
+            </dependency>
+            <!--lombok-->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -98,6 +107,18 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool-version}</version>
+            </dependency>
+            <!--fastjson依赖-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson-version}</version>
+            </dependency>
+            <!--jwt依赖-->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jwt-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
