@@ -1,2 +1,14 @@
 server:
   port: 8081
+spring:
+  redis:
+    host: localhost
+    password: battcn
+  timeout: 10000
+  database: 0
+  lettuce:
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0

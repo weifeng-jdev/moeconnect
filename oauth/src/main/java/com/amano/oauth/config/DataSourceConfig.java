@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 @RefreshScope
 @Configuration
 @Slf4j
-public class DataSourceConfiguration {
+public class DataSourceConfig {
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource druidDataSource() {
