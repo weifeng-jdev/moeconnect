@@ -6,6 +6,7 @@
 
     <modules>
         <module>oauth</module>
+        <module>core</module>
     </modules>
 
     <parent>
