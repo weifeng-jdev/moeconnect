@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: moeconnect-oauth
+  profiles:
+    active: local
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos-host}:${nacos-port}
+        group: MOECONNECT
+        namespace: 7fb7f4f3-9536-4d64-98ac-f155923d14c8
+      config:
+        server-addr: ${nacos-host}:${nacos-port}
+        file-extension: yaml
+        prefix: ${spring.application.name}
+        group: MOECONNECT
+        namespace: 7fb7f4f3-9536-4d64-98ac-f155923d14c8
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8081
