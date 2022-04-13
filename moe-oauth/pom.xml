@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>com.amano</groupId>
-    <artifactId>oauth</artifactId>
+    <artifactId>moe-oauth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>oauth</name>
 

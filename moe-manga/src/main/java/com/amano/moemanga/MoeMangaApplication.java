@@ -1,5 +1,6 @@
 package com.amano.moemanga;
 
+import com.amano.moe.core.redis.util.RedisUtil;
 import org.mybatis.spring.annotation.MapperScan;
 import org.mybatis.spring.annotation.MapperScans;
 import org.springframework.boot.SpringApplication;

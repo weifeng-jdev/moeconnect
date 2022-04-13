@@ -1,4 +1,4 @@
-package com.amano.moemanga.utils;
+package com.amano.moe.core.redis.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.ParserConfig;
