@@ -1,7 +1,6 @@
 package com.amano.moe.core.redis.config;
 
 import com.amano.moe.core.redis.util.FastJsonRedisSerializer;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
