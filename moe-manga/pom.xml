@@ -79,10 +79,16 @@
             <artifactId>fastjson</artifactId>
         </dependency>
 
+        <!-- 模块内部依赖 -->
+        <dependency>
+            <groupId>com.amano</groupId>
+            <artifactId>moe-core-common</artifactId>
+            <version>${application-version}</version>
+        </dependency>
         <dependency>
             <groupId>com.amano</groupId>
             <artifactId>moe-core-starter-redis</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${application-version}</version>
         </dependency>
     </dependencies>
 
